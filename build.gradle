@@ -78,7 +78,7 @@ modTemplate {
 
     changelog {
         enabled true
-        firstCommit "00b8533b085761ba4d3409bed1d84630d03f996e"
+        firstCommit "7be07f93a04ca2c273cb6bc252fa16d155d79279"
         repo "https://github.com/jaredlll08/IceAndFireTweaker"
     }
     versionTracker {
