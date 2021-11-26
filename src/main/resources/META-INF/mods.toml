@@ -1,0 +1,12 @@
+modLoader = "javafml"
+loaderVersion = "[36,)"
+license = "MIT"
+[[mods]]
+modId = "iceandfiretweaker"
+version = "${file.jarVersion}"
+displayName = "Ice And Fire Tweaker"
+updateJSONURL = "https://updates.blamejared.com/get?n=IceAndFireTweaker&gv=1.16.5"
+authors = "Jaredlll08"
+description = '''
+Adds CraftTweaker support to Ice And Fire.
+'''
