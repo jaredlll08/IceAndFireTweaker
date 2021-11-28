@@ -25,7 +25,7 @@ mods.iceandfire.DragonForge.addRecipe("ice", <item:minecraft:white_wool>, <item:
 mods.iceandfire.DragonForge.addIceRecipe(<item:minecraft:diamond>, <item:minecraft:red_wool>, <item:minecraft:blue_wool>);
 
 /*
-    Adds two recipes to the Ice Dragon Forge.
+    Adds two recipes to the Lightning Dragon Forge.
     The first recipe outputs Dirt when a Stick is used as an input and a Diamond is used as blood.
     The second recipe outputs Blue Wool when Glowstone is used as an input and Glass is used as blood.
     The third recipe outputs a Diamond when Red Wool is used as an input and Blue Wool is used as blood.
