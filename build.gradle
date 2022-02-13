@@ -98,7 +98,7 @@ sourceSets.main.resources { srcDir 'src/generated/resources' }
 repositories {
     maven { url 'https://maven.blamejared.com' }
     maven { url 'https://modmaven.dev' }
-    maven { url "https://cursemaven.com" }
+    maven { url "https://cfa2.cursemaven.com" }
 }
 
 dependencies {

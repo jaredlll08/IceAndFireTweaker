@@ -3,14 +3,15 @@ package com.blamejared.iceandfiretweaker.action;
 import com.blamejared.crafttweaker.api.actions.IRuntimeAction;
 import com.github.alexthe666.iceandfire.recipe.DragonForgeRecipe;
 import com.github.alexthe666.iceandfire.recipe.IafRecipeRegistry;
+import net.minecraftforge.fml.LogicalSide;
 
 import javax.annotation.Nonnull;
 import java.util.List;
 
 public abstract class ActionDragonForgeBase implements IRuntimeAction {
-    
+
     protected List<DragonForgeRecipe> getRecipeList(final @Nonnull String dragonType) {
-        switch(dragonType) {
+        switch (dragonType) {
             case "fire":
                 return IafRecipeRegistry.FIRE_FORGE_RECIPES;
             case "ice":
@@ -21,5 +22,9 @@ public abstract class ActionDragonForgeBase implements IRuntimeAction {
                 throw new IllegalArgumentException("Unknown dragon type: " + dragonType);
         }
     }
-    
+
+    @Override
+    public boolean shouldApplyOn(LogicalSide side) {
+        return shouldApplySingletons();
+    }
 }
