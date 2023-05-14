@@ -10,3 +10,9 @@ authors = "Jaredlll08"
 description = '''
 Adds CraftTweaker support to Ice And Fire.
 '''
+[[dependencies.iceandfiretweaker]]
+modId = "iceandfire"
+mandatory = true
+versionRange = "[2.1.12-1.16.5,)"
+ordering = "NONE"
+side = "BOTH"
