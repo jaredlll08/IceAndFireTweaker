@@ -19,14 +19,14 @@ apply plugin: 'com.blamejared.modtemplate'
 apply plugin: 'maven-publish'
 apply plugin: "com.matthewprenger.cursegradle"
 
-version = '2.0.1'
+version = '3.0.0'
 group = 'com.blamejared.iceandfiretweaker'
 archivesBaseName = 'IceAndFireTweaker'
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
 minecraft {
-    mappings channel: 'official', version: '1.18.2'
+    mappings channel: 'official', version: '1.19.2'
     runs {
         client {
             workingDirectory project.file('run')
@@ -72,7 +72,7 @@ minecraft {
 }
 
 modTemplate {
-    mcVersion "1.18.2"
+    mcVersion "1.19.2"
     curseHomepage "https://www.curseforge.com/minecraft/mc-mods/ice-and-fire-tweaker"
     displayName "IceAndFireTweaker"
 
@@ -115,15 +115,15 @@ repositories {
 }
 
 dependencies {
-    def ctDep = 'com.blamejared.crafttweaker:CraftTweaker-forge-1.18.2:9.1.206'
+    def ctDep = 'com.blamejared.crafttweaker:CraftTweaker-forge-1.19.2:10.1.56'
     // Not actually sure if this even works, or if it is even required.
-    def mcDep = 'net.minecraftforge:forge:1.18.2-40.1.52'
+    def mcDep = 'net.minecraftforge:forge:1.19.2-43.5.0'
     minecraft mcDep
     implementation fg.deobf(ctDep)
-    implementation fg.deobf("mezz.jei:jei-1.18.2:9.7.0.229")
-    implementation fg.deobf("curse.maven:ice-and-fire-dragons-264231:5037775")
-    implementation fg.deobf("curse.maven:citadel-331936:3783096")
-    annotationProcessor 'com.blamejared.crafttweaker:Crafttweaker_Annotation_Processors-1.18.2:2.0.0.86'
+    implementation fg.deobf("mezz.jei:jei-1.19.2-forge:11.8.1.1034")
+    implementation fg.deobf("curse.maven:ice-and-fire-dragons-264231:5037952")
+    implementation fg.deobf("curse.maven:citadel-331936:4556677")
+    annotationProcessor 'com.blamejared.crafttweaker:Crafttweaker_Annotation_Processors:3.0.0.16'
     annotationProcessor 'com.google.code.gson:gson:2.8.6'
     annotationProcessor 'org.reflections:reflections:0.9.10'
     annotationProcessor mcDep
@@ -192,7 +192,7 @@ curseforge {
         releaseType = 'release'
         changelog = file("changelog.md")
         changelogType = 'markdown'
-        addGameVersion '1.18.2'
+        addGameVersion '1.19.2'
         mainArtifact(jar) {
             relations {
                 requiredDependency 'crafttweaker'
