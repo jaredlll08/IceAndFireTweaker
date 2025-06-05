@@ -88,6 +88,6 @@ public class DragonForge implements IRecipeManager<DragonForgeRecipe> {
     
     @Override
     public RecipeType<DragonForgeRecipe> getRecipeType() {
-        return IafRecipeRegistry.DRAGON_FORGE_TYPE;
+        return IafRecipeRegistry.DRAGON_FORGE_TYPE.get();
     }
 }

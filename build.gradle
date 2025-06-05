@@ -1,3 +1,4 @@
+
 buildscript {
     repositories {
         maven { url = 'https://files.minecraftforge.net/maven' }
@@ -18,7 +19,7 @@ apply plugin: 'com.blamejared.modtemplate'
 apply plugin: 'maven-publish'
 apply plugin: "com.matthewprenger.cursegradle"
 
-version = '2.0.0'
+version = '2.0.1'
 group = 'com.blamejared.iceandfiretweaker'
 archivesBaseName = 'IceAndFireTweaker'
 
@@ -120,7 +121,7 @@ dependencies {
     minecraft mcDep
     implementation fg.deobf(ctDep)
     implementation fg.deobf("mezz.jei:jei-1.18.2:9.7.0.229")
-    implementation fg.deobf("curse.maven:ice-and-fire-dragons-264231:4434019")
+    implementation fg.deobf("curse.maven:ice-and-fire-dragons-264231:5037775")
     implementation fg.deobf("curse.maven:citadel-331936:3783096")
     annotationProcessor 'com.blamejared.crafttweaker:Crafttweaker_Annotation_Processors-1.18.2:2.0.0.86'
     annotationProcessor 'com.google.code.gson:gson:2.8.6'
